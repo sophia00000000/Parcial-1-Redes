@@ -55,7 +55,7 @@ Una vez aplicado el filtro a la señal:
 Y luego aplicamos la Transformada Inversa de Fourier (TIF)* para recuperar la señal en el dominio del tiempo:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6c51caac-a0b8-4001-b703-81a1d0ea596f" alt="image" width="180">
-</p>
+</p> *
 
 Este proceso ayuda a eliminar ruido fuera del rango de frecuencia útil y mejorar la calidad de la señal.
 
