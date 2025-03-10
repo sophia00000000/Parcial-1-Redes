@@ -19,6 +19,7 @@ Donde:
   - x(t) es la señal en el tiempo.
   - f es la frecuencia.
   - j es la unidad imaginaria (j²=1).
+
 Esta transformación es crucial en la capa física para manipular y analizar señales en redes de comunicación.
 
 ## Aplicaciones
