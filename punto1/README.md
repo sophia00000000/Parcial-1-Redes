@@ -70,7 +70,7 @@ En OFDM, los datos se transmiten en múltiples subportadoras ortogonales*. En lu
 
 Cada símbolo OFDM se genera aplicando la Transformada Inversa de Fourier Discreta (IDFT):
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d183be32-f6f8-434b-bb2a-6ad1f7f04edf" alt="image" width="250">
+  <img src="https://github.com/user-attachments/assets/d183be32-f6f8-434b-bb2a-6ad1f7f04edf" alt="image" width="300">
 </p>
 
 Donde:
