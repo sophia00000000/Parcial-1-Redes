@@ -53,7 +53,7 @@ Una vez aplicado el filtro a la señal:
   <code>x̅(f) = H(f)Y(f)</code>
 </p>
 
-Y luego aplicamos la Transformada Inversa de Fourier (TIF)* para recuperar la señal en el dominio del tiempo:
+Aplicamos la Transformada Inversa de Fourier (TIF)* para recuperar la señal en el dominio del tiempo:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6c51caac-a0b8-4001-b703-81a1d0ea596f" alt="image" width="200">*
 </p>
@@ -68,12 +68,34 @@ El OFDM (Orthogonal Frequency Division Multiplexing) es una técnica utilizada e
 
 En OFDM, los datos se transmiten en múltiples subportadoras ortogonales*. En lugar de enviar un solo flujo de datos a alta velocidad (lo que puede ser vulnerable a la interferencia), OFDM divide los datos en muchas subportadoras más lentas.
 
+Cada símbolo OFDM se genera aplicando la Transformada Inversa de Fourier Discreta (IDFT):
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d183be32-f6f8-434b-bb2a-6ad1f7f04edf" alt="image" width="200">
+</p>
+
+Donde:
+  - X[k] representa los símbolos de datos modulados en el dominio de la frecuencia.
+  - x[n] es la señal en el dominio del tiempo.
+  - N es el número de subportadoras.
+
+La implementación eficiente de la IDFT en hardware y software se hace mediante la Transformada Rápida de Fourier (FFT).
+
+En el receptor, se usa la Transformada de Fourier Discreta (DFT) para recuperar los símbolos:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/49ed958d-c3a1-41aa-991a-56651d3e7774" alt="image" width="200">*
+</p>
+
+Este proceso convierte la señal OFDM recibida nuevamente al dominio de la frecuencia (la TF normal) para demodular los datos.
+
 
 
 ## Aclaraciones
 
-*(TIF) -> En el procesamiento de señales y telecomunicaciones, la Transformada de Fourier convierte una señal al dominio de la frecuencia para facilitar análisis y modificaciones. Luego, la Transformada Inversa de Fourier clave para recuperar una señal en el dominio del tiempo después de procesarla en el dominio de la frecuencia.
+*(TIF) -> En el procesamiento de señales y telecomunicaciones, la Transformada de Fourier convierte una señal al dominio de la frecuencia para facilitar análisis y modificaciones. Luego, la Transformada Inversa de Fourier es clave para recuperar una señal en el dominio del tiempo después de procesarla en el dominio de la frecuencia.
 
 *Tipo de señal continua -> Son funciones definidas para todo instante de tiempo (t) por lo que se trabaja con integrales.
 
 *Una subportadora es una onda senoidal que transporta una parte de la información de la señal y dos señales son ortogonales si la integral de su producto en un período determinado es cero. Ej: Se tiene varias ondas senoidales **sin(2πf1t), sin(2πf2t), sin(2πf 3t), etc.** Si estas ondas tienen frecuencias no ortogonales, se mezclarían y crearían interferencia. Pero si están separadas por Δf=1/T, sus integrales de producto serán cero, asegurando que no interfieran.
+
+*Tipo de señal discreta -> Solo están definidas en instantes específicos (n), no en todos los valores de tiempo, por lo que se trabaja con sumatorias.
