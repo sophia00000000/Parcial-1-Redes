@@ -108,7 +108,23 @@ Al aplicar la Transformada de Fourier, obtenemos picos en las frecuencias f1, f2
 
 En este caso, se usa una formula llamada delta de Dirac, que representa un pico infinitamente delgado y alto en la frecuencia. Basicamente el resultado de esa formula siempre son los dos picos de frecuencias, uno negativo y otro positivo.
 
+Elegimos tres frecuencias y amplitudes para graficar:
+  - f1 = 50Hz, f2 = 150Hz, f3 = 300Hz
+  - A1 = 1.0, A2 = 0.8, A3 = 0.6
+  - La señal durará un segundo y se toma muestra cada milisegundo en el tiempo*
 
+![image](https://github.com/user-attachments/assets/ffdd879d-b49d-42e2-8760-df6494087398)
+
+En la primera gráfica, vemos la combinación de las tres ondas. Se observa una oscilación compleja porque es la suma de tres frecuencias distintas (Si graficáramos cada una por separado, veríamos que cada una tiene su propia frecuencia y amplitud).
+
+Donde:
+  - Primer coseno: A1 = 1.0, f1=50Hz ->oscila 50 veces por seg
+  - Segundo coseno: A2 = 0.8, f2=150Hz ->oscila 150 veces por seg
+  - Tercer coseno: A1 = 0.6, f1=300Hz ->oscila 300 veces por seg
+
+Al sumarlos, obtenemos una oscilación más compleja porque las ondas interactúan entre sí. La gráfica en el dominio del tiempo muestra una combinación de los tres movimientos sinusoidales. Algo a tener en cuenta es que Un coseno oscila entre +1 y -1, así que cuando sumamos varias ondas, la señal final también tendrá valores positivos y negativos (por eso la amplitud es negativa).
+
+En la segunda gráfica (dominio de la frecuencia), la magnitud de la Transformada de Fourier siempre es positiva porque representa la energía contenida en cada frecuencia. Aunque en la frecuencia hay picos inversos (50 y -50 por ejemplo) no se grafican porque la parte negativa no aporta información adicional. 
 
 ## Aclaraciones
 
@@ -121,3 +137,9 @@ En este caso, se usa una formula llamada delta de Dirac, que representa un pico 
 *Tipo de señal discreta -> Solo están definidas en instantes específicos (n), no en todos los valores de tiempo, por lo que se trabaja con sumatorias.
 
 *El coseno es una función par (cos(−t) = cos(t)), lo que significa que su espectro es simétrico en frecuencia. Esta genera dos picos en frecuencia en la misma fase, mientras que el seno genera los dos picos pero con diferente fase, en este caso no se quiere cambiar de fase (es mas facil de manejar y calcular).
+
+*La frecuencia máxima representable es fNyquist = 500 Hz, frecuencias mayores a 500 Hz se reflejarían en el espectro debido al aliasing.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/87064f59-92fb-45a7-a0c0-d3500531f685" alt="image" width="200">
+</p>
+
