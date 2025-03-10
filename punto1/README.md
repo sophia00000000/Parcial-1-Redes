@@ -25,8 +25,18 @@ Esta transformación es crucial en la capa física para manipular y analizar se�
 
   ### 1. Filtrado de señales y reducción de ruido
 
-Cuando una señal de comunicación está contaminada por ruido, podemos utilizar la Transformada de Fourier para analizar el espectro de la señal y aplicar filtros adecuados.
+En las telecomunicaciones, el ruido y las interferencias pueden degradar la señal transmitida. La TF permite identificar las frecuencias no deseadas y aplicar filtros para eliminarlas, mejorando la calidad de la transmisión.
 
 Si tenemos una señal recibida con ruido:
+
 `y(t) = x(t) + n(t)`
 
+Donde: 
+  - x(t) es la señal original.
+  - n(t) es el ruido.
+
+Cuando se aplica la transformada de fourier: 
+
+`Y(f) = X(f) + N(f)`
+
+Si el ruido N(f) está concentrado en ciertas frecuencias, podemos diseñar un filtro pasa-banda para eliminarlo. Un filtro ideal en el dominio de la frecuencia sería:
