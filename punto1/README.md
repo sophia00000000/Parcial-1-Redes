@@ -40,7 +40,6 @@ Cuando se aplica la transformada de fourier:
 `Y(f) = X(f) + N(f)`
 
 Si el ruido N(f) está concentrado en ciertas frecuencias, podemos diseñar un filtro pasa-banda para eliminarlo. Un filtro ideal en el dominio de la frecuencia sería:
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/99562bf0-871d-4a0f-8726-1f03966d861c" alt="image">
 </p>
@@ -49,4 +48,19 @@ Una vez aplicado el filtro a la señal:
 
 `X(f) = H(f)Y(f)`
 
+Y luego aplicamos la Transformada Inversa de Fourier (TIF)* para recuperar la señal en el dominio del tiempo:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6c51caac-a0b8-4001-b703-81a1d0ea596f" alt="image">
+</p>
 
+Este proceso ayuda a eliminar ruido fuera del rango de frecuencia útil y mejorar la calidad de la señal.
+
+---
+
+  ### 2. Multiplexación por División de Frecuencia Ortogonal (OFDM)
+wiwiwi
+
+
+## Aclaraciones
+
+*(TIF) = En el procesamiento de señales y telecomunicaciones, la Transformada de Fourier convierte una señal al dominio de la frecuencia para facilitar análisis y modificaciones. Luego, la Transformada Inversa de Fourier clave para recuperar una señal en el dominio del tiempo después de procesarla en el dominio de la frecuencia.
