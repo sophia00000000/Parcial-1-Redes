@@ -10,7 +10,9 @@ A contribuido al análisis de señales en la capa física por medio de:
 
 Dada una señal en el dominio del tiempo x(t), su representación en el dominio de la frecuencia se obtiene mediante la Transformada de Fourier:
 
-![image](https://github.com/user-attachments/assets/0035d36b-7768-403e-9cc2-18c8cac1169d)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0035d36b-7768-403e-9cc2-18c8cac1169d" alt="image">
+</p>
 
 Donde:
   - X(f) es la representación en frecuencia de la señal.
