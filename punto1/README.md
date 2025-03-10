@@ -21,4 +21,25 @@ Donde:
   - j es la unidad imaginaria (j²=1).
 Esta transformación es crucial en la capa física para manipular y analizar señales en redes de comunicación.
 
-### Aplicaciones
+## Aplicaciones
+
+  1. Filtrado de señales y reducción de ruido
+
+Cuando una señal de comunicación está contaminada por ruido, podemos utilizar la Transformada de Fourier para analizar el espectro de la señal y aplicar filtros adecuados.
+
+Si tenemos una señal recibida con ruido:
+
+𝑦
+(
+𝑡
+)
+=
+𝑥
+(
+𝑡
+)
++
+𝑛
+(
+𝑡
+)
