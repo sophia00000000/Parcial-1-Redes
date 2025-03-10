@@ -23,23 +23,8 @@ Esta transformación es crucial en la capa física para manipular y analizar se�
 
 ## Aplicaciones
 
-  1. Filtrado de señales y reducción de ruido
+  ### 1. Filtrado de señales y reducción de ruido
 
 Cuando una señal de comunicación está contaminada por ruido, podemos utilizar la Transformada de Fourier para analizar el espectro de la señal y aplicar filtros adecuados.
 
 Si tenemos una señal recibida con ruido:
-
-𝑦
-(
-𝑡
-)
-=
-𝑥
-(
-𝑡
-)
-+
-𝑛
-(
-𝑡
-)
