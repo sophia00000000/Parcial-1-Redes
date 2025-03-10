@@ -63,8 +63,10 @@ Este proceso ayuda a eliminar ruido fuera del rango de frecuencia útil y mejora
 ---
 
   ### 2. Multiplexación por División de Frecuencia Ortogonal (OFDM)
-wiwiwi
 
+El OFDM (Orthogonal Frequency Division Multiplexing) es una técnica utilizada en Wi-Fi, LTE, 5G y DSL para mejorar la eficiencia espectral y la resistencia a interferencias.
+
+En OFDM, los datos se transmiten en múltiples subportadoras ortogonales*. En lugar de enviar un solo flujo de datos a alta velocidad (lo que puede ser vulnerable a la interferencia), OFDM divide los datos en muchas subportadoras más lentas.
 
 
 
@@ -73,3 +75,5 @@ wiwiwi
 *(TIF) -> En el procesamiento de señales y telecomunicaciones, la Transformada de Fourier convierte una señal al dominio de la frecuencia para facilitar análisis y modificaciones. Luego, la Transformada Inversa de Fourier clave para recuperar una señal en el dominio del tiempo después de procesarla en el dominio de la frecuencia.
 
 *Tipo de señal continua -> Son funciones definidas para todo instante de tiempo (t) por lo que se trabaja con integrales.
+
+*Una subportadora es una onda senoidal que transporta una parte de la información de la señal y dos señales son ortogonales si la integral de su producto en un período determinado es cero. Ej: Se tiene varias ondas senoidales **sin(2πf1t), sin(2πf2t), sin(2πf 3t), etc.** Si estas ondas tienen frecuencias no ortogonales, se mezclarían y crearían interferencia. Pero si están separadas por Δf=1/T, sus integrales de producto serán cero, asegurando que no interfieran.
