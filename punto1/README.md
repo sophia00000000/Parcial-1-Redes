@@ -88,7 +88,25 @@ En el receptor, se usa la Transformada de Fourier Discreta (DFT) para recuperar 
 
 Este proceso convierte la señal OFDM recibida nuevamente al dominio de la frecuencia (la TF normal) para demodular los datos.
 
+## Ejemplo de señal transmitida
 
+Si la señal transmitida es una suma de tres sinusoides con diferentes frecuencias 
+f1, f2, f3, su expresión en el dominio del tiempo sería:
+<p align="center">
+  <code>x(t) = A1cos(2πf1t) + A2cos(2πf2t) + A3cos(2πf3t))</code>*
+</p>
+
+Donde:
+  - A1, A2 y A3 son las amplitudes de las sinusoides
+  - f1, f2 y f3 son las frecuencias en Hz
+
+Al aplicar la Transformada de Fourier, obtenemos picos en las frecuencias f1, f2, f3 y en sus versiones negativas -f1, -f2, -f3, porque el coseno es una función par y tiene componentes en ambas direcciones:
+
+  - `A1/2 en +f1 y -f1`
+  - `A2/2 en +f2 y -f2`
+  - `A3/2 en +f3 y -f3`
+
+En este caso, se usa una formula llamada delta de Dirac, que representa un pico infinitamente delgado y alto en la frecuencia. Basicamente el resultado de esa formula siempre son los dos picos de frecuencias, uno negativo y otro positivo.
 
 ## Aclaraciones
 
@@ -99,3 +117,5 @@ Este proceso convierte la señal OFDM recibida nuevamente al dominio de la frecu
 *Una subportadora es una onda senoidal que transporta una parte de la información de la señal y dos señales son ortogonales si la integral de su producto en un período determinado es cero. Ej: Se tiene varias ondas senoidales **sin(2πf1t), sin(2πf2t), sin(2πf 3t), etc.** Si estas ondas tienen frecuencias no ortogonales, se mezclarían y crearían interferencia. Pero si están separadas por Δf=1/T, sus integrales de producto serán cero, asegurando que no interfieran.
 
 *Tipo de señal discreta -> Solo están definidas en instantes específicos (n), no en todos los valores de tiempo, por lo que se trabaja con sumatorias.
+
+*El coseno es una función par (cos(−t) = cos(t)), lo que significa que su espectro es simétrico en frecuencia. Esta genera dos picos en frecuencia, mientras que el seno genera los dos picos pero con diferente fase, como en este caso se quiere cambiar de fase (es mas facil de manejar y calcular).
