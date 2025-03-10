@@ -28,7 +28,6 @@ Esta transformación es crucial en la capa física para manipular y analizar se�
 En las telecomunicaciones, el ruido y las interferencias pueden degradar la señal transmitida. La TF permite identificar las frecuencias no deseadas y aplicar filtros para eliminarlas, mejorando la calidad de la transmisión.
 
 Si tenemos una señal recibida con ruido:
-
 <p align="center">
   <code>y(t) = x(t) + n(t)</code>
 </p>
@@ -39,8 +38,9 @@ Donde:
   - n(t) es el ruido.
 
 Cuando se aplica la transformada de fourier: 
-
-`Y(f) = X(f) + N(f)`
+<p align="center">
+  <code>Y(f) = X(f) + N(f)</code>
+</p>
 
 Si el ruido N(f) está concentrado en ciertas frecuencias, podemos diseñar un filtro pasa-banda para eliminarlo. Un filtro ideal en el dominio de la frecuencia sería:
 <p align="center">
@@ -48,8 +48,9 @@ Si el ruido N(f) está concentrado en ciertas frecuencias, podemos diseñar un f
 </p>
 
 Una vez aplicado el filtro a la señal:
-
-`X(f) = H(f)Y(f)`
+<p align="center">
+  <code>X(f) = H(f)Y(f)</code>
+</p>
 
 Y luego aplicamos la Transformada Inversa de Fourier (TIF)* para recuperar la señal en el dominio del tiempo:
 <p align="center">
