@@ -28,3 +28,4 @@ Esta transformación es crucial en la capa física para manipular y analizar se�
 Cuando una señal de comunicación está contaminada por ruido, podemos utilizar la Transformada de Fourier para analizar el espectro de la señal y aplicar filtros adecuados.
 
 Si tenemos una señal recibida con ruido:
+'y(t)=x(t)+n(t)'
