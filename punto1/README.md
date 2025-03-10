@@ -41,5 +41,7 @@ Cuando se aplica la transformada de fourier:
 
 Si el ruido N(f) está concentrado en ciertas frecuencias, podemos diseñar un filtro pasa-banda para eliminarlo. Un filtro ideal en el dominio de la frecuencia sería:
 
-![Fórmula](https://latex.codecogs.com/png.latex?H(f)%20=%20\begin{cases}1,%20&%20f%20\in%20[f_1,%20f_2]\\0,%20&%20\text{fuera%20de%20esa%20banda}\end{cases})
+`H(f) = { 1, si f ∈ [f1, f2]  
+        0, fuera de esa banda }`
+
 
