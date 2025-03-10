@@ -19,3 +19,5 @@ Transmisión 17: Pérdida, cwnd=1
 Transmisión 18: Exito, cwnd=2
 Transmisión 19: Exito, cwnd=4
 Transmisión 20: Exito, cwnd=5
+
+![image](https://github.com/user-attachments/assets/58340012-31f0-43ec-8060-9cecd7adac32)
