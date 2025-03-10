@@ -11,7 +11,7 @@ A contribuido al análisis de señales en la capa física por medio de:
 Dada una señal en el dominio del tiempo x(t), su representación en el dominio de la frecuencia se obtiene mediante la Transformada de Fourier:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0035d36b-7768-403e-9cc2-18c8cac1169d" alt="image" width="170">
+  <img src="https://github.com/user-attachments/assets/0035d36b-7768-403e-9cc2-18c8cac1169d" alt="image" width="180">
 </p>
 
 Donde:
@@ -44,7 +44,7 @@ Cuando se aplica la transformada de fourier:
 
 Si el ruido N(f) está concentrado en ciertas frecuencias, podemos diseñar un filtro pasa-banda para eliminarlo. Un filtro ideal en el dominio de la frecuencia sería:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/99562bf0-871d-4a0f-8726-1f03966d861c" alt="image">
+  <img src="https://github.com/user-attachments/assets/99562bf0-871d-4a0f-8726-1f03966d861c" alt="image" width="180">
 </p>
 
 Una vez aplicado el filtro a la señal:
@@ -54,7 +54,7 @@ Una vez aplicado el filtro a la señal:
 
 Y luego aplicamos la Transformada Inversa de Fourier (TIF)* para recuperar la señal en el dominio del tiempo:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6c51caac-a0b8-4001-b703-81a1d0ea596f" alt="image">
+  <img src="https://github.com/user-attachments/assets/6c51caac-a0b8-4001-b703-81a1d0ea596f" alt="image" width="180">
 </p>
 
 Este proceso ayuda a eliminar ruido fuera del rango de frecuencia útil y mejorar la calidad de la señal.
