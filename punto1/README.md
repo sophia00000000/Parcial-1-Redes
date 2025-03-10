@@ -61,6 +61,8 @@ Este proceso ayuda a eliminar ruido fuera del rango de frecuencia útil y mejora
 wiwiwi
 
 
+
+
 ## Aclaraciones
 
 *(TIF) = En el procesamiento de señales y telecomunicaciones, la Transformada de Fourier convierte una señal al dominio de la frecuencia para facilitar análisis y modificaciones. Luego, la Transformada Inversa de Fourier clave para recuperar una señal en el dominio del tiempo después de procesarla en el dominio de la frecuencia.
