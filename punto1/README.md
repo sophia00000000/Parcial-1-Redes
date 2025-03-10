@@ -108,6 +108,8 @@ Al aplicar la Transformada de Fourier, obtenemos picos en las frecuencias f1, f2
 
 En este caso, se usa una formula llamada delta de Dirac, que representa un pico infinitamente delgado y alto en la frecuencia. Basicamente el resultado de esa formula siempre son los dos picos de frecuencias, uno negativo y otro positivo.
 
+
+
 ## Aclaraciones
 
 *(TIF) -> En el procesamiento de señales y telecomunicaciones, la Transformada de Fourier convierte una señal al dominio de la frecuencia para facilitar análisis y modificaciones. Luego, la Transformada Inversa de Fourier es clave para recuperar una señal en el dominio del tiempo después de procesarla en el dominio de la frecuencia.
@@ -118,4 +120,4 @@ En este caso, se usa una formula llamada delta de Dirac, que representa un pico 
 
 *Tipo de señal discreta -> Solo están definidas en instantes específicos (n), no en todos los valores de tiempo, por lo que se trabaja con sumatorias.
 
-*El coseno es una función par (cos(−t) = cos(t)), lo que significa que su espectro es simétrico en frecuencia. Esta genera dos picos en frecuencia, mientras que el seno genera los dos picos pero con diferente fase, como en este caso se quiere cambiar de fase (es mas facil de manejar y calcular).
+*El coseno es una función par (cos(−t) = cos(t)), lo que significa que su espectro es simétrico en frecuencia. Esta genera dos picos en frecuencia en la misma fase, mientras que el seno genera los dos picos pero con diferente fase, en este caso no se quiere cambiar de fase (es mas facil de manejar y calcular).
