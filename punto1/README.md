@@ -29,7 +29,10 @@ En las telecomunicaciones, el ruido y las interferencias pueden degradar la señ
 
 Si tenemos una señal recibida con ruido:
 
-`y(t) = x(t) + n(t)`
+<p align="center">
+  <code>y(t) = x(t) + n(t)</code>
+</p>
+
 
 Donde: 
   - x(t) es la señal original.
