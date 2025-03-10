@@ -40,3 +40,6 @@ Cuando se aplica la transformada de fourier:
 `Y(f) = X(f) + N(f)`
 
 Si el ruido N(f) está concentrado en ciertas frecuencias, podemos diseñar un filtro pasa-banda para eliminarlo. Un filtro ideal en el dominio de la frecuencia sería:
+
+H(f) = { 1, si f ∈ [f1, f2]  
+        0, fuera de esa banda }
