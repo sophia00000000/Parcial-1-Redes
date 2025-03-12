@@ -131,8 +131,11 @@ Elegimos tres frecuencias y amplitudes para graficar:
 <p align="center">
     <img src="https://github.com/user-attachments/assets/87064f59-92fb-45a7-a0c0-d3500531f685" alt="image" width="200">
    </p>
+
 >[!NOTE]
 >**La frecuencia máxima representable es fNyquist = 500 Hz, frecuencias mayores a 500 Hz se reflejarían en el espectro debido al aliasing.*
+>![image](https://github.com/user-attachments/assets/93f23e58-0778-45a8-82a0-11235ec3316c)
+
 
 
 ![image](https://github.com/user-attachments/assets/ffdd879d-b49d-42e2-8760-df6494087398)
