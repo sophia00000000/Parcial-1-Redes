@@ -11,24 +11,26 @@ Se solicita desarrollar un programa en **Python** que simule la conexión de var
 - Cuando recibe un mensaje, extrae el nombre del cliente
 - Envía una confirmación con el formato especificado
 
-### Cliente
+![image](https://github.com/user-attachments/assets/f98b09ca-3a80-4592-bb04-a87a55e93bf2)
+
+
+### Clientes
 
  - Se conecta al servidor en localhost:2010
 - Envía un mensaje con su nombre en el formato solicitado
 - Recibe y muestra la respuesta del servidor
 - Permite especificar el nombre del cliente mediante argumentos de línea de comandos
+- Mantiene la conexión abierta para enviar y recibir más mensajes además del predeterminado
 
-## Evidencias de ejecución
+![image](https://github.com/user-attachments/assets/7f87c321-3824-4d4d-9962-fd1dd8fe2316)
 
-![image](https://github.com/user-attachments/assets/78afd0fb-dcfb-4034-b3de-f615fd8d3bea)
+![image](https://github.com/user-attachments/assets/101b5373-f769-49c1-9ce7-45b746a24932)
 
-![image](https://github.com/user-attachments/assets/ea72f462-c1b0-4649-be8e-c6992e305759)
+![image](https://github.com/user-attachments/assets/7ca3d0c1-bba5-4dfa-9a77-d8585413197b)
 
-![image](https://github.com/user-attachments/assets/d51b92a5-ea98-4a13-8ae2-e5bd0f83f0af)
+![image](https://github.com/user-attachments/assets/d5cc2163-26f0-4fc3-9c75-c6086252554f)
 
-![image](https://github.com/user-attachments/assets/f3e69a2b-0dc0-4434-be9e-a0eeb4151798)
 
-![image](https://github.com/user-attachments/assets/b4ec76a2-524f-4910-8221-45227e92a7ad)
 
 
 
