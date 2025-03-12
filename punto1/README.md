@@ -62,6 +62,7 @@ Este proceso ayuda a eliminar ruido fuera del rango de frecuencia útil y mejora
 
 >[!NOTE]
 >*(TIF) -> En el procesamiento de señales y telecomunicaciones, la Transformada de Fourier convierte una señal al dominio de la frecuencia para facilitar análisis y modificaciones. Luego, la Transformada Inversa de Fourier es clave para recuperar una señal en el dominio del tiempo después de procesarla en el dominio de la frecuencia.
+>
 >*Tipo de señal continua -> Son funciones definidas para todo instante de tiempo (t) por lo que se trabaja con integrales.
 
 ---
