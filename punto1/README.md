@@ -60,6 +60,8 @@ Aplicamos la Transformada Inversa de Fourier (TIF)* para recuperar la señal en 
 
 Este proceso ayuda a eliminar ruido fuera del rango de frecuencia útil y mejorar la calidad de la señal.
 
+> 💡 **Tip:** Siempre documenta tu código para facilitar su mantenimiento.
+
 ---
 
   ### 2. Multiplexación por División de Frecuencia Ortogonal (OFDM)
