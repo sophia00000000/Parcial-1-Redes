@@ -10,18 +10,15 @@ arrCwnd = []
 # Simulación de TCP s
 for i in range(20):
     exito = random.randint(1, 100) <= 80  # Probabilidad de éxito 80%
-    #  Slow Start: crecimiento exponencial
  
     if exito:
         cwnd += 1
     else:  # Pprdida de paquete
         cwnd = 1  # Reiniciar cwnd
-    print(f"Transmisión {i + 1}: {'Exito' if (exito)else 'Pérdida'}, cwnd={cwnd}")
-
-
+    print(f"Transmisión {i + 1}: {'Exito' if (exito)else 'Pérdida'}, cwnd={cwnd}"
+          
     arrTransmisiones.append(i + 1)
     arrCwnd.append(cwnd)
-
 
 # Graficar resultados 
 plt.figure(figsize=(10, 5))
