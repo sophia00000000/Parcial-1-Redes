@@ -74,7 +74,7 @@ El OFDM (Orthogonal Frequency Division Multiplexing) es una técnica utilizada e
 En OFDM, los datos se transmiten en múltiples subportadoras ortogonales*. En lugar de enviar un solo flujo de datos a alta velocidad (lo que puede ser vulnerable a la interferencia), OFDM divide los datos en muchas subportadoras más lentas.
 
 >[!IMPORTANT]
->*Una subportadora es una onda senoidal que transporta una parte de la información de la señal y dos señales son ortogonales si la integral de su producto en un período determinado es cero. Ej: Se tiene varias ondas senoidales **sin(2πf1t), sin(2πf2t), sin(2πf 3t), etc.** Si estas ondas tienen frecuencias no ortogonales, se mezclarían y crearían interferencia. Pero si están separadas por Δf=1/T, sus integrales de producto serán cero, asegurando que no interfieran.
+>**Una subportadora es una onda senoidal que transporta una parte de la información de la señal y dos señales son ortogonales si la integral de su producto en un período determinado es cero. Ej: Se tiene varias ondas senoidales **sin(2πf1t), sin(2πf2t), sin(2πf 3t), etc.** Si estas ondas tienen frecuencias no ortogonales, se mezclarían y crearían interferencia. Pero si están separadas por Δf=1/T, sus integrales de producto serán cero, asegurando que no interfieran.*
 
 Cada símbolo OFDM se genera aplicando la Transformada Inversa de Fourier Discreta (IDFT):
 <p align="center">
@@ -96,6 +96,9 @@ En el receptor, se usa la Transformada de Fourier Discreta (DFT) para recuperar 
 
 Este proceso convierte la señal OFDM recibida nuevamente al dominio de la frecuencia (la TF normal) para demodular los datos.
 
+>[!NOTE]
+>**Tipo de señal discreta -> Solo están definidas en instantes específicos (n), no en todos los valores de tiempo, por lo que se trabaja con sumatorias.*
+
 ## Ejemplo de señal transmitida
 
 Si la señal transmitida es una suma de tres sinusoides con diferentes frecuencias 
@@ -107,6 +110,10 @@ f1, f2, f3, su expresión en el dominio del tiempo sería:
 Donde:
   - A1, A2 y A3 son las amplitudes de las sinusoides
   - f1, f2 y f3 son las frecuencias en Hz
+
+>[!NOTE]
+>**El coseno es una función par (cos(−t) = cos(t)), lo que significa que su espectro es simétrico en frecuencia. Esta genera dos picos en frecuencia en la misma fase, mientras que el seno genera los dos picos pero con diferente fase, en este caso no se quiere cambiar de fase (es mas facil de manejar y calcular).*
+
 
 Al aplicar la Transformada de Fourier, obtenemos picos en las frecuencias f1, f2, f3 y en sus versiones negativas -f1, -f2, -f3, porque el coseno es una función par y tiene componentes en ambas direcciones:
 
@@ -121,6 +128,12 @@ Elegimos tres frecuencias y amplitudes para graficar:
   - A1 = 1.0, A2 = 0.8, A3 = 0.6
   - La señal durará un segundo y se toma muestra cada milisegundo en el tiempo*
 
+>[!NOTE]
+>**La frecuencia máxima representable es fNyquist = 500 Hz, frecuencias mayores a 500 Hz se reflejarían en el espectro debido al aliasing.*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/87064f59-92fb-45a7-a0c0-d3500531f685" alt="image" width="200">
+</p>
+
 ![image](https://github.com/user-attachments/assets/ffdd879d-b49d-42e2-8760-df6494087398)
 
 En la primera gráfica, vemos la combinación de las tres ondas. Se observa una oscilación compleja porque es la suma de tres frecuencias distintas (Si graficáramos cada una por separado, veríamos que cada una tiene su propia frecuencia y amplitud).
@@ -134,15 +147,4 @@ Al sumarlos, obtenemos una oscilación más compleja porque las ondas interactú
 
 En la segunda gráfica (dominio de la frecuencia), la magnitud de la Transformada de Fourier siempre es positiva porque representa la energía contenida en cada frecuencia. Aunque en la frecuencia hay picos inversos (50 y -50 por ejemplo) no se grafican porque la parte negativa no aporta información adicional. 
 
-## Aclaraciones
-
-
-*Tipo de señal discreta -> Solo están definidas en instantes específicos (n), no en todos los valores de tiempo, por lo que se trabaja con sumatorias.
-
-*El coseno es una función par (cos(−t) = cos(t)), lo que significa que su espectro es simétrico en frecuencia. Esta genera dos picos en frecuencia en la misma fase, mientras que el seno genera los dos picos pero con diferente fase, en este caso no se quiere cambiar de fase (es mas facil de manejar y calcular).
-
-*La frecuencia máxima representable es fNyquist = 500 Hz, frecuencias mayores a 500 Hz se reflejarían en el espectro debido al aliasing.
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/87064f59-92fb-45a7-a0c0-d3500531f685" alt="image" width="200">
-</p>
 
