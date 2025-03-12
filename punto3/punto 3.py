@@ -1,5 +1,5 @@
 import random
-cwnd = 1
+cwnd = 0
 import matplotlib.pyplot as plt
 
 
